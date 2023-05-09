@@ -29,6 +29,12 @@ use std::cmp::Ordering;
 //     return result;
 // }
 
+// ============ Generic ================ //
+// use std::ops::Add;  // Allow to addition generic
+// fn get_sum_gen<T:Add<Output = T>>(x: T, y: T) -> T {
+//     return x + y;
+// }
+
 fn main() {
     // println!("Hey what is your fucking name????");
     // // This var can be change
@@ -178,5 +184,9 @@ fn main() {
     // let num_list = vec![1,2,3,4,5,6,7];
     // println!("sum of list is: {}", sum_list(num_list));
 
+    // ============= Generic ================== //
+    // // Sum other data types
+    // println!("5 + 4 = {}", get_sum_gen(5, 4));
+    // println!("5.4 + 4.2 = {}", get_sum_gen(5.4, 4.2));
 
 }
