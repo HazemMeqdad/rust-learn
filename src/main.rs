@@ -4,6 +4,31 @@ use rand::Rng;
 use std::io::{Write, BufRead, BufReader, ErrorKind};
 use std::cmp::Ordering;
 
+// =========== Functions ============== //
+// fn sey_hello() {
+//     println!("Hello")
+// }
+
+// fn get_size(x: u32, y: u32) -> u32 {
+//     // Can use this two ways
+//     // return x * y;
+//     x * y
+// }
+
+// fn get_2(x: i32) -> (i32, i32) {
+//     // Can use this two ways
+//     // return (x+1, x);
+//     (x+1, x)
+// }
+
+// fn sum_list(nums: Vec<u32>) -> u32 {
+//     let mut result: u32 = 0;
+//     for num in nums{
+//         result += num;
+//     }
+//     return result;
+// }
+
 fn main() {
     // println!("Hey what is your fucking name????");
     // // This var can be change
@@ -112,7 +137,46 @@ fn main() {
     // }
 
     // ============== Casting =================== //
-    let int_u8: u8 = 5;
-    let int2_u8: u8 = 4;
-    println!("test");
+    // let int_u8: u8 = 5;
+    // let int2_u8: u8 = 4;
+    // let int3_u32: u32 = (int_u8 as u32) + (int2_u8 as u32);
+    
+    // ============== Enums =================== //
+    // enum Day{
+    //     Monday,
+    //     Tuesday,
+    //     Wednesday,
+    //     Thursday,
+    //     Friday,
+    //     Saturday,
+    //     Sunday
+    // }
+    // impl Day{
+    //     fn is_weekend(&self) -> bool {
+    //         match (self) {
+    //             Day::Saturday | Day::Sunday => true,
+    //             _ => false
+    //         }
+    //     }
+    // }
+    // let today: Day = Day::Monday;
+    // println!("{}", today.is_weekend())
+
+    // ============ Vectors ============= //
+    // let vec1: Vec<u32> = Vec::new();
+    // let mut vec2 = vec![1,2,3,4];
+    // vec2.push(5);
+    // for v in vec2 {
+    //     println!("{}", v);
+    // }
+   
+    // ============= call functions =========== //
+    // sey_hello();
+    // println!("Size of square: {}", get_size(2,3));
+    // let values: (i32, i32) = get_2(2);  // or let (val_1, val_2) = get_2(2);
+    // println!("Two values: {}, {}", values.0, values.1);
+    // let num_list = vec![1,2,3,4,5,6,7];
+    // println!("sum of list is: {}", sum_list(num_list));
+
+
 }
