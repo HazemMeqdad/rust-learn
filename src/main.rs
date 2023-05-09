@@ -189,4 +189,9 @@ fn main() {
     // println!("5 + 4 = {}", get_sum_gen(5, 4));
     // println!("5.4 + 4.2 = {}", get_sum_gen(5.4, 4.2));
 
+    // ============== Onwership ================ //
+    // let str1 = String::from("World");
+    // let str2 = str1.clone();  // if not use clone will be got error because str1 move to str2 and str1 is not be have a value
+    // println!("Hello {}", str1);
+
 }
